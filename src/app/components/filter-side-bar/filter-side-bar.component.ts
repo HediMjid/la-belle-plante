@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-filter-side-bar',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./filter-side-bar.component.scss']
 })
 export class FilterSideBarComponent implements OnInit {
+@Input() listCategories : any;
 
   constructor() { }
 
